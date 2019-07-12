@@ -1,19 +1,28 @@
 {
-  "name": "vidjot",
+  "name": "instacloud",
   "version": "1.0.0",
-  "description": "App para guardar notas com login system",
+  "description": "App para guardar fotos com login system",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/vnkvp/vidjot.git"
+    "url": "git+ssh://git@github.com/vnkvp/instacloud.git"
   },
   "author": "Oswaldo Inacio",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/vnkvp/vidjot/issues"
+    "url": "https://github.com/vnkvp/instacloud/issues"
   },
-  "homepage": "https://github.com/vnkvp/vidjot#readme"
+  "homepage": "https://github.com/vnkvp/instacloud#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "fs": "0.0.1-security",
+    "mongoose": "^5.6.4",
+    "multer": "^1.4.1",
+    "path": "^0.12.7"
+  }
 }

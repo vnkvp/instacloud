@@ -1,0 +1,10 @@
+{{#each posts}}
+<div class="card card-body">
+    <img src="/uploads/{{image}}">
+    <h4>{{title}}</h4>
+    <p>{{details}}</p>
+    <p>{{date}}</p>
+</div>
+{{else}}
+<p>No pics found</p>
+{{/each}}
