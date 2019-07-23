@@ -3,15 +3,12 @@ const Schema = mongoose.Schema;
 
 // Criar Schema
 const postSchema = new Schema ({
-    title:{
+    subtitle:{
         type: String,
         required: true
     },
     image:{
         data: Buffer,
-        type: String
-    },
-    details:{
         type: String,
         required: true
     },

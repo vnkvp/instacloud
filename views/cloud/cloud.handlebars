@@ -1,10 +1,26 @@
-{{#each posts}}
-<div class="card card-body">
-    <img src="/uploads/{{image}}">
-    <h4>{{title}}</h4>
-    <p>{{details}}</p>
-    <p>{{date}}</p>
+<div class="container3 text-center">
+    <h2 class="display-4">
+        Hello {{name}} !
+    </h2>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi, minus.</p>
 </div>
-{{else}}
-<p>No pics found</p>
-{{/each}}
+<div class="photogrid">
+    {{#each posts}}
+    <div>
+        <span>
+            <form method="POST" action="/cloud{{id}}?_method=DELETE">
+                <input type="hidden" name="_method" value="DELETE">
+                <button type="submit" class="btn btn-danger mb-2">X</button>
+            </form>
+        </span>
+        <a href="/uploads/{{image}}" data-lightbox="gallery" data-title="{{subtitle}}" id="{{id}}"><img
+                src="/uploads/{{image}}"></a>
+    </div>
+    {{else}}
+    <p>No pics found</p>
+    {{/each}}
+</div>
+<footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/js/lightbox-plus-jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.1/css/lightbox.min.css">
+</footer>
